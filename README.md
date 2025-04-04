@@ -20,7 +20,7 @@ Get ready to level up your skills and have a blast! 🎉
 
 ## To the workshop! 💻
 
-Navigate to the [workshop directory](./build/index.html)
+Navigate to the [workshop directory](./build/)
 ️
 ![workshop image](./assets/screenshot.png)
 
