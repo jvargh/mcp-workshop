@@ -1,0 +1,27 @@
+{
+  "id": "mcp-concepts/more",
+  "title": "There's more than tools",
+  "description": "",
+  "source": "@site/docs/mcp-concepts/more.md",
+  "sourceDirName": "mcp-concepts",
+  "slug": "/mcp-concepts/more",
+  "permalink": "/mcp-workshop/docs/mcp-concepts/more",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/mcp-concepts/more.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Consuming a server with Visual Studio Code",
+    "permalink": "/mcp-workshop/docs/mcp-concepts/vscode"
+  },
+  "next": {
+    "title": "Consuming external servers",
+    "permalink": "/mcp-workshop/docs/mcp-concepts/external"
+  }
+}

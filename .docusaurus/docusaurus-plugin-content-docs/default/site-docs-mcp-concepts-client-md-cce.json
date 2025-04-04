@@ -1,0 +1,27 @@
+{
+  "id": "mcp-concepts/client",
+  "title": "Creating a client",
+  "description": "To create a client, we'll use a similar set up as with the server.",
+  "source": "@site/docs/mcp-concepts/client.md",
+  "sourceDirName": "mcp-concepts",
+  "slug": "/mcp-concepts/client",
+  "permalink": "/mcp-workshop/docs/mcp-concepts/client",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/mcp-concepts/client.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "A first MCP server",
+    "permalink": "/mcp-workshop/docs/mcp-concepts/first-server"
+  },
+  "next": {
+    "title": "LLM Client",
+    "permalink": "/mcp-workshop/docs/mcp-concepts/llm-client"
+  }
+}

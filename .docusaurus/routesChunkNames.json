@@ -1,0 +1,265 @@
+{
+  "/mcp-workshop/blog-5b9": {
+    "__comp": "a6aa9e1f",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "f4f34a3a"
+      },
+      {
+        "content": "8717b14a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "__props": "bc28414a"
+  },
+  "/mcp-workshop/blog/archive-2e8": {
+    "__comp": "9e4087bc",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "__props": "1e0f7827"
+  },
+  "/mcp-workshop/blog/authors-8e3": {
+    "__comp": "621db11d",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "36c0497f"
+  },
+  "/mcp-workshop/blog/authors/all-sebastien-lorber-articles-5b6": {
+    "__comp": "33fc5bb8",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "f4f34a3a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "sidebar": "814f3328",
+    "__props": "7de5920e"
+  },
+  "/mcp-workshop/blog/authors/yangshun-b83": {
+    "__comp": "33fc5bb8",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "8717b14a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "sidebar": "814f3328",
+    "__props": "09d61444"
+  },
+  "/mcp-workshop/blog/first-blog-post-0c4": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "e273c56f"
+  },
+  "/mcp-workshop/blog/long-blog-post-034": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "73664a40"
+  },
+  "/mcp-workshop/blog/mdx-blog-post-3ef": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "59362658"
+  },
+  "/mcp-workshop/blog/tags-e9e": {
+    "__comp": "01a85c17",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "0a9a6ee1"
+  },
+  "/mcp-workshop/blog/tags/docusaurus-315": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "f4f34a3a"
+      },
+      {
+        "content": "8717b14a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "__props": "f14978f8"
+  },
+  "/mcp-workshop/blog/tags/facebook-a97": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      }
+    ],
+    "__props": "d17b5ef7"
+  },
+  "/mcp-workshop/blog/tags/hello-871": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "8717b14a"
+      }
+    ],
+    "__props": "ffe9c037"
+  },
+  "/mcp-workshop/blog/tags/hola-f61": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "__props": "558f8922"
+  },
+  "/mcp-workshop/blog/welcome-5ed": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "d9f32620"
+  },
+  "/mcp-workshop/markdown-page-6f3": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "content": "393be207"
+  },
+  "/mcp-workshop/docs-fb2": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/mcp-workshop/docs-d52": {
+    "__comp": "a7bd4aaa",
+    "__props": "a08a3edc"
+  },
+  "/mcp-workshop/docs-972": {
+    "__comp": "a94703ab"
+  },
+  "/mcp-workshop/docs/category/mcp-concepts-53e": {
+    "__comp": "14eb3368",
+    "__props": "6754929c"
+  },
+  "/mcp-workshop/docs/mcp-concepts/client-2f0": {
+    "__comp": "17896441",
+    "content": "ccefba23"
+  },
+  "/mcp-workshop/docs/mcp-concepts/external-eba": {
+    "__comp": "17896441",
+    "content": "d583d264"
+  },
+  "/mcp-workshop/docs/mcp-concepts/first-server-03c": {
+    "__comp": "17896441",
+    "content": "ae9e7a13"
+  },
+  "/mcp-workshop/docs/mcp-concepts/intro-9a4": {
+    "__comp": "17896441",
+    "content": "914ffb15"
+  },
+  "/mcp-workshop/docs/mcp-concepts/llm-client-06f": {
+    "__comp": "17896441",
+    "content": "29ecb90f"
+  },
+  "/mcp-workshop/docs/mcp-concepts/more-21e": {
+    "__comp": "17896441",
+    "content": "6fe96092"
+  },
+  "/mcp-workshop/docs/mcp-concepts/sse-a0e": {
+    "__comp": "17896441",
+    "content": "8964ea6a"
+  },
+  "/mcp-workshop/docs/mcp-concepts/vscode-87f": {
+    "__comp": "17896441",
+    "content": "e24c944c"
+  },
+  "/mcp-workshop/-a43": {
+    "__comp": "1df93b7f",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}

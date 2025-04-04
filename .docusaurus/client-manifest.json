@@ -1,0 +1,713 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "2465": [
+      867,
+      1869,
+      3249,
+      4813,
+      6061,
+      7643,
+      7982,
+      8401,
+      2465
+    ],
+    "3042": [
+      3042
+    ],
+    "7982": [
+      867,
+      1869,
+      2465,
+      3249,
+      4212,
+      4813,
+      7643,
+      7982
+    ],
+    "17896441": [
+      1869,
+      2465,
+      8401
+    ],
+    "59362658": [
+      9325
+    ],
+    "main": [
+      1869,
+      5354,
+      8792
+    ],
+    "runtime~main": [
+      1869,
+      8792,
+      5354
+    ],
+    "01a85c17": [
+      1869,
+      8209
+    ],
+    "09d61444": [
+      251
+    ],
+    "0a9a6ee1": [
+      5633
+    ],
+    "14eb3368": [
+      1869,
+      6969
+    ],
+    "1df93b7f": [
+      1869,
+      4583
+    ],
+    "1e0f7827": [
+      4327
+    ],
+    "1f391b9e": [
+      1869,
+      2465,
+      6061
+    ],
+    "29ecb90f": [
+      9350
+    ],
+    "33fc5bb8": [
+      1869,
+      2465,
+      7982,
+      867
+    ],
+    "36994c47": [
+      9858
+    ],
+    "36c0497f": [
+      9131
+    ],
+    "393be207": [
+      4134
+    ],
+    "558f8922": [
+      8998
+    ],
+    "5e95c892": [
+      9647
+    ],
+    "621db11d": [
+      1869,
+      7982,
+      4212
+    ],
+    "6754929c": [
+      8460
+    ],
+    "6875c492": [
+      1869,
+      2465,
+      7982,
+      4813
+    ],
+    "6fe96092": [
+      3534
+    ],
+    "73664a40": [
+      1972
+    ],
+    "7661071f": [
+      8737
+    ],
+    "7de5920e": [
+      5112
+    ],
+    "814f3328": [
+      7472
+    ],
+    "8717b14a": [
+      3694
+    ],
+    "8964ea6a": [
+      1725
+    ],
+    "914ffb15": [
+      2205
+    ],
+    "925b3f96": [
+      8609
+    ],
+    "9e4087bc": [
+      2711
+    ],
+    "a08a3edc": [
+      518
+    ],
+    "a6aa9e1f": [
+      1869,
+      2465,
+      7982,
+      7643
+    ],
+    "a7456010": [
+      1235
+    ],
+    "a7bd4aaa": [
+      7098
+    ],
+    "a94703ab": [
+      1869,
+      9048
+    ],
+    "aba21aa0": [
+      5742
+    ],
+    "acecf23e": [
+      1903
+    ],
+    "ae9e7a13": [
+      1707
+    ],
+    "bc28414a": [
+      3712
+    ],
+    "ccc49370": [
+      1869,
+      2465,
+      7982,
+      3249
+    ],
+    "ccefba23": [
+      266
+    ],
+    "d17b5ef7": [
+      334
+    ],
+    "d583d264": [
+      5545
+    ],
+    "d9f32620": [
+      5557
+    ],
+    "e24c944c": [
+      9033
+    ],
+    "e273c56f": [
+      9328
+    ],
+    "f14978f8": [
+      5202
+    ],
+    "f4f34a3a": [
+      3637
+    ],
+    "ffe9c037": [
+      286
+    ],
+    "styles": [
+      867,
+      2465,
+      3249,
+      4212,
+      4583,
+      4813,
+      5354,
+      6061,
+      6969,
+      7643,
+      7982,
+      8209,
+      8401,
+      8792,
+      9048,
+      1869
+    ]
+  },
+  "assets": {
+    "251": {
+      "js": [
+        {
+          "file": "assets/js/09d61444.6419a635.js",
+          "hash": "cfab50b29a2f48d1",
+          "publicPath": "/mcp-workshop/assets/js/09d61444.6419a635.js"
+        }
+      ]
+    },
+    "266": {
+      "js": [
+        {
+          "file": "assets/js/ccefba23.e93743ef.js",
+          "hash": "2d709983dbd62065",
+          "publicPath": "/mcp-workshop/assets/js/ccefba23.e93743ef.js"
+        }
+      ]
+    },
+    "286": {
+      "js": [
+        {
+          "file": "assets/js/ffe9c037.055f9343.js",
+          "hash": "87ddebe3423569a1",
+          "publicPath": "/mcp-workshop/assets/js/ffe9c037.055f9343.js"
+        }
+      ]
+    },
+    "334": {
+      "js": [
+        {
+          "file": "assets/js/d17b5ef7.5a7c8e31.js",
+          "hash": "cc3878d5e617d09c",
+          "publicPath": "/mcp-workshop/assets/js/d17b5ef7.5a7c8e31.js"
+        }
+      ]
+    },
+    "518": {
+      "js": [
+        {
+          "file": "assets/js/a08a3edc.cd6b9a0c.js",
+          "hash": "a36ed16cf96e2667",
+          "publicPath": "/mcp-workshop/assets/js/a08a3edc.cd6b9a0c.js"
+        }
+      ]
+    },
+    "867": {
+      "js": [
+        {
+          "file": "assets/js/33fc5bb8.10df946b.js",
+          "hash": "f64a7ffac0fcf4f1",
+          "publicPath": "/mcp-workshop/assets/js/33fc5bb8.10df946b.js"
+        }
+      ]
+    },
+    "1235": {
+      "js": [
+        {
+          "file": "assets/js/a7456010.a44276ba.js",
+          "hash": "b99c2c1114ab4eab",
+          "publicPath": "/mcp-workshop/assets/js/a7456010.a44276ba.js"
+        }
+      ]
+    },
+    "1707": {
+      "js": [
+        {
+          "file": "assets/js/ae9e7a13.1bd26d22.js",
+          "hash": "146d3a03662f342a",
+          "publicPath": "/mcp-workshop/assets/js/ae9e7a13.1bd26d22.js"
+        }
+      ]
+    },
+    "1725": {
+      "js": [
+        {
+          "file": "assets/js/8964ea6a.10b8a119.js",
+          "hash": "62312bd3f20858b8",
+          "publicPath": "/mcp-workshop/assets/js/8964ea6a.10b8a119.js"
+        }
+      ]
+    },
+    "1869": {
+      "css": [
+        {
+          "file": "assets/css/styles.b8d2aa6b.css",
+          "hash": "912a874b57a60189",
+          "publicPath": "/mcp-workshop/assets/css/styles.b8d2aa6b.css"
+        }
+      ]
+    },
+    "1903": {
+      "js": [
+        {
+          "file": "assets/js/acecf23e.2658199e.js",
+          "hash": "ff82ad67ae78e687",
+          "publicPath": "/mcp-workshop/assets/js/acecf23e.2658199e.js"
+        }
+      ]
+    },
+    "1972": {
+      "js": [
+        {
+          "file": "assets/js/73664a40.a746591e.js",
+          "hash": "7509fc2499a1133a",
+          "publicPath": "/mcp-workshop/assets/js/73664a40.a746591e.js"
+        }
+      ]
+    },
+    "2205": {
+      "js": [
+        {
+          "file": "assets/js/914ffb15.ca87d77c.js",
+          "hash": "7d72968540e91984",
+          "publicPath": "/mcp-workshop/assets/js/914ffb15.ca87d77c.js"
+        }
+      ]
+    },
+    "2465": {
+      "js": [
+        {
+          "file": "assets/js/2465.f5330e76.js",
+          "hash": "031a8fff72d2cd9e",
+          "publicPath": "/mcp-workshop/assets/js/2465.f5330e76.js"
+        }
+      ]
+    },
+    "2711": {
+      "js": [
+        {
+          "file": "assets/js/9e4087bc.b2e06d0c.js",
+          "hash": "e86bfc099bc44c85",
+          "publicPath": "/mcp-workshop/assets/js/9e4087bc.b2e06d0c.js"
+        }
+      ]
+    },
+    "3042": {
+      "js": [
+        {
+          "file": "assets/js/3042.7978a7b3.js",
+          "hash": "4bb1ed4f65afa17f",
+          "publicPath": "/mcp-workshop/assets/js/3042.7978a7b3.js"
+        }
+      ]
+    },
+    "3249": {
+      "js": [
+        {
+          "file": "assets/js/ccc49370.ab74c0ef.js",
+          "hash": "fa9d0775536b8eaa",
+          "publicPath": "/mcp-workshop/assets/js/ccc49370.ab74c0ef.js"
+        }
+      ]
+    },
+    "3534": {
+      "js": [
+        {
+          "file": "assets/js/6fe96092.7d698274.js",
+          "hash": "5f2d2a99b0199273",
+          "publicPath": "/mcp-workshop/assets/js/6fe96092.7d698274.js"
+        }
+      ]
+    },
+    "3637": {
+      "js": [
+        {
+          "file": "assets/js/f4f34a3a.0390d4df.js",
+          "hash": "9fe6602aaef0f1c4",
+          "publicPath": "/mcp-workshop/assets/js/f4f34a3a.0390d4df.js"
+        }
+      ]
+    },
+    "3694": {
+      "js": [
+        {
+          "file": "assets/js/8717b14a.4959e9d9.js",
+          "hash": "79a06a66ad61f55f",
+          "publicPath": "/mcp-workshop/assets/js/8717b14a.4959e9d9.js"
+        }
+      ]
+    },
+    "3712": {
+      "js": [
+        {
+          "file": "assets/js/bc28414a.2d65498a.js",
+          "hash": "51bf174991dc8478",
+          "publicPath": "/mcp-workshop/assets/js/bc28414a.2d65498a.js"
+        }
+      ]
+    },
+    "4134": {
+      "js": [
+        {
+          "file": "assets/js/393be207.324dd9aa.js",
+          "hash": "7e1397e4246a4ff2",
+          "publicPath": "/mcp-workshop/assets/js/393be207.324dd9aa.js"
+        }
+      ]
+    },
+    "4212": {
+      "js": [
+        {
+          "file": "assets/js/621db11d.cbf5cdf9.js",
+          "hash": "4d172ca70aeb7357",
+          "publicPath": "/mcp-workshop/assets/js/621db11d.cbf5cdf9.js"
+        }
+      ]
+    },
+    "4327": {
+      "js": [
+        {
+          "file": "assets/js/1e0f7827.f6ff8b71.js",
+          "hash": "cf3b571c8b3b2a2e",
+          "publicPath": "/mcp-workshop/assets/js/1e0f7827.f6ff8b71.js"
+        }
+      ]
+    },
+    "4583": {
+      "js": [
+        {
+          "file": "assets/js/1df93b7f.e54ba005.js",
+          "hash": "4e8f9efad195ebcf",
+          "publicPath": "/mcp-workshop/assets/js/1df93b7f.e54ba005.js"
+        }
+      ]
+    },
+    "4813": {
+      "js": [
+        {
+          "file": "assets/js/6875c492.cefc0a33.js",
+          "hash": "88b068e3f45e8418",
+          "publicPath": "/mcp-workshop/assets/js/6875c492.cefc0a33.js"
+        }
+      ]
+    },
+    "5112": {
+      "js": [
+        {
+          "file": "assets/js/7de5920e.1681aaa1.js",
+          "hash": "4f7a56849121e6f8",
+          "publicPath": "/mcp-workshop/assets/js/7de5920e.1681aaa1.js"
+        }
+      ]
+    },
+    "5202": {
+      "js": [
+        {
+          "file": "assets/js/f14978f8.b25f64e1.js",
+          "hash": "c0a88daf539f853c",
+          "publicPath": "/mcp-workshop/assets/js/f14978f8.b25f64e1.js"
+        }
+      ]
+    },
+    "5354": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.b517703a.js",
+          "hash": "4c04c37d41172d08",
+          "publicPath": "/mcp-workshop/assets/js/runtime~main.b517703a.js"
+        }
+      ]
+    },
+    "5545": {
+      "js": [
+        {
+          "file": "assets/js/d583d264.d7f65ad8.js",
+          "hash": "db5d8c805dbf50ab",
+          "publicPath": "/mcp-workshop/assets/js/d583d264.d7f65ad8.js"
+        }
+      ]
+    },
+    "5557": {
+      "js": [
+        {
+          "file": "assets/js/d9f32620.4a61db00.js",
+          "hash": "833890565b9853a3",
+          "publicPath": "/mcp-workshop/assets/js/d9f32620.4a61db00.js"
+        }
+      ]
+    },
+    "5633": {
+      "js": [
+        {
+          "file": "assets/js/0a9a6ee1.876744ef.js",
+          "hash": "1f2ef5da43b0d867",
+          "publicPath": "/mcp-workshop/assets/js/0a9a6ee1.876744ef.js"
+        }
+      ]
+    },
+    "5742": {
+      "js": [
+        {
+          "file": "assets/js/aba21aa0.4d2e2550.js",
+          "hash": "39dbc0437fedb289",
+          "publicPath": "/mcp-workshop/assets/js/aba21aa0.4d2e2550.js"
+        }
+      ]
+    },
+    "6061": {
+      "js": [
+        {
+          "file": "assets/js/1f391b9e.6454d607.js",
+          "hash": "96e64654761f187c",
+          "publicPath": "/mcp-workshop/assets/js/1f391b9e.6454d607.js"
+        }
+      ]
+    },
+    "6969": {
+      "js": [
+        {
+          "file": "assets/js/14eb3368.b75bbb8c.js",
+          "hash": "44829b85fb932c37",
+          "publicPath": "/mcp-workshop/assets/js/14eb3368.b75bbb8c.js"
+        }
+      ]
+    },
+    "7098": {
+      "js": [
+        {
+          "file": "assets/js/a7bd4aaa.124fc84e.js",
+          "hash": "c1141da282f8b227",
+          "publicPath": "/mcp-workshop/assets/js/a7bd4aaa.124fc84e.js"
+        }
+      ]
+    },
+    "7472": {
+      "js": [
+        {
+          "file": "assets/js/814f3328.64290a8b.js",
+          "hash": "30f6af274f16a7f1",
+          "publicPath": "/mcp-workshop/assets/js/814f3328.64290a8b.js"
+        }
+      ]
+    },
+    "7643": {
+      "js": [
+        {
+          "file": "assets/js/a6aa9e1f.c2c3ede3.js",
+          "hash": "d750b7a81ab3a5a7",
+          "publicPath": "/mcp-workshop/assets/js/a6aa9e1f.c2c3ede3.js"
+        }
+      ]
+    },
+    "7982": {
+      "js": [
+        {
+          "file": "assets/js/7982.78c27fcd.js",
+          "hash": "35a381c3c8ef96d7",
+          "publicPath": "/mcp-workshop/assets/js/7982.78c27fcd.js"
+        }
+      ]
+    },
+    "8209": {
+      "js": [
+        {
+          "file": "assets/js/01a85c17.7334bd85.js",
+          "hash": "e0c27d7c7a4a8825",
+          "publicPath": "/mcp-workshop/assets/js/01a85c17.7334bd85.js"
+        }
+      ]
+    },
+    "8401": {
+      "js": [
+        {
+          "file": "assets/js/17896441.d8add172.js",
+          "hash": "5ce385a722f8befd",
+          "publicPath": "/mcp-workshop/assets/js/17896441.d8add172.js"
+        }
+      ]
+    },
+    "8460": {
+      "js": [
+        {
+          "file": "assets/js/6754929c.081035a6.js",
+          "hash": "b63cc052ad7ed77b",
+          "publicPath": "/mcp-workshop/assets/js/6754929c.081035a6.js"
+        }
+      ]
+    },
+    "8609": {
+      "js": [
+        {
+          "file": "assets/js/925b3f96.76ac5833.js",
+          "hash": "b95270416e37f106",
+          "publicPath": "/mcp-workshop/assets/js/925b3f96.76ac5833.js"
+        }
+      ]
+    },
+    "8737": {
+      "js": [
+        {
+          "file": "assets/js/7661071f.12ef38df.js",
+          "hash": "2a0ff4d9be8654df",
+          "publicPath": "/mcp-workshop/assets/js/7661071f.12ef38df.js"
+        }
+      ]
+    },
+    "8792": {
+      "js": [
+        {
+          "file": "assets/js/main.5d31d52e.js",
+          "hash": "e5dffdcf4ea78830",
+          "publicPath": "/mcp-workshop/assets/js/main.5d31d52e.js"
+        }
+      ]
+    },
+    "8998": {
+      "js": [
+        {
+          "file": "assets/js/558f8922.2ad5e1cd.js",
+          "hash": "0cea2a867f2441ad",
+          "publicPath": "/mcp-workshop/assets/js/558f8922.2ad5e1cd.js"
+        }
+      ]
+    },
+    "9033": {
+      "js": [
+        {
+          "file": "assets/js/e24c944c.d624741c.js",
+          "hash": "a44f1faec298a2b4",
+          "publicPath": "/mcp-workshop/assets/js/e24c944c.d624741c.js"
+        }
+      ]
+    },
+    "9048": {
+      "js": [
+        {
+          "file": "assets/js/a94703ab.eefd9df5.js",
+          "hash": "4b0c969f1adc629d",
+          "publicPath": "/mcp-workshop/assets/js/a94703ab.eefd9df5.js"
+        }
+      ]
+    },
+    "9131": {
+      "js": [
+        {
+          "file": "assets/js/36c0497f.19a8fe7c.js",
+          "hash": "cf944109f1fbdbb5",
+          "publicPath": "/mcp-workshop/assets/js/36c0497f.19a8fe7c.js"
+        }
+      ]
+    },
+    "9325": {
+      "js": [
+        {
+          "file": "assets/js/59362658.fbbed8de.js",
+          "hash": "17d680055bba97da",
+          "publicPath": "/mcp-workshop/assets/js/59362658.fbbed8de.js"
+        }
+      ]
+    },
+    "9328": {
+      "js": [
+        {
+          "file": "assets/js/e273c56f.38ec22b5.js",
+          "hash": "be4e031bfba9bedd",
+          "publicPath": "/mcp-workshop/assets/js/e273c56f.38ec22b5.js"
+        }
+      ]
+    },
+    "9350": {
+      "js": [
+        {
+          "file": "assets/js/29ecb90f.956edde9.js",
+          "hash": "b45e352113cb0e1f",
+          "publicPath": "/mcp-workshop/assets/js/29ecb90f.956edde9.js"
+        }
+      ]
+    },
+    "9647": {
+      "js": [
+        {
+          "file": "assets/js/5e95c892.2e04146f.js",
+          "hash": "0341ab658d4f1374",
+          "publicPath": "/mcp-workshop/assets/js/5e95c892.2e04146f.js"
+        }
+      ]
+    },
+    "9858": {
+      "js": [
+        {
+          "file": "assets/js/36994c47.5e861eba.js",
+          "hash": "c1c55bdba0aef93a",
+          "publicPath": "/mcp-workshop/assets/js/36994c47.5e861eba.js"
+        }
+      ]
+    }
+  }
+}

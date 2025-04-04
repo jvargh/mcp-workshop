@@ -1,0 +1,23 @@
+{
+  "id": "mcp-concepts/external",
+  "title": "Consuming external servers",
+  "description": "",
+  "source": "@site/docs/mcp-concepts/external.md",
+  "sourceDirName": "mcp-concepts",
+  "slug": "/mcp-concepts/external",
+  "permalink": "/mcp-workshop/docs/mcp-concepts/external",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/mcp-concepts/external.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "There's more than tools",
+    "permalink": "/mcp-workshop/docs/mcp-concepts/more"
+  }
+}

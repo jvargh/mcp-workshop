@@ -1,0 +1,73 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/mcp-workshop/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/mcp-workshop/docs",
+          "mainDocId": "mcp-concepts/intro",
+          "docs": [
+            {
+              "id": "mcp-concepts/client",
+              "path": "/mcp-workshop/docs/mcp-concepts/client",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "mcp-concepts/external",
+              "path": "/mcp-workshop/docs/mcp-concepts/external",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "mcp-concepts/first-server",
+              "path": "/mcp-workshop/docs/mcp-concepts/first-server",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "mcp-concepts/intro",
+              "path": "/mcp-workshop/docs/mcp-concepts/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "mcp-concepts/llm-client",
+              "path": "/mcp-workshop/docs/mcp-concepts/llm-client",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "mcp-concepts/more",
+              "path": "/mcp-workshop/docs/mcp-concepts/more",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "mcp-concepts/sse",
+              "path": "/mcp-workshop/docs/mcp-concepts/sse",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "mcp-concepts/vscode",
+              "path": "/mcp-workshop/docs/mcp-concepts/vscode",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/mcp-concepts",
+              "path": "/mcp-workshop/docs/category/mcp-concepts",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/mcp-workshop/docs/category/mcp-concepts",
+                "label": "MCP Concepts"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

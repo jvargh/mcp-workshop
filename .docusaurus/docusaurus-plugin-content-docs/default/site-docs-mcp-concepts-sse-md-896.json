@@ -1,0 +1,27 @@
+{
+  "id": "mcp-concepts/sse",
+  "title": "Servers with SSE",
+  "description": "Another way to create a server is to use the Server-Sent Events (SSE) transport.",
+  "source": "@site/docs/mcp-concepts/sse.md",
+  "sourceDirName": "mcp-concepts",
+  "slug": "/mcp-concepts/sse",
+  "permalink": "/mcp-workshop/docs/mcp-concepts/sse",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/mcp-concepts/sse.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LLM Client",
+    "permalink": "/mcp-workshop/docs/mcp-concepts/llm-client"
+  },
+  "next": {
+    "title": "Consuming a server with Visual Studio Code",
+    "permalink": "/mcp-workshop/docs/mcp-concepts/vscode"
+  }
+}
