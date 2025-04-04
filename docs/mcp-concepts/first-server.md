@@ -213,4 +213,24 @@ npm run inspector
 
 You should see a window like this:
 
+![Connect](/img/connect.png)
 
+- Select to "Connect" and you should see the window below:
+
+![Connect](/img/connected.png)
+
+- Select "List tools", to see what tools are available:
+
+   ![Connect](/img/tools-listed.png)
+
+- Select "add" and a dialog on your right will ask you to fill in the parameters:
+
+   ![Connect](/img/running-tool.png)  
+
+- You should see the result of the tool in the inspector, see **16** in the bottom result:
+
+   ![Connect](/img/ran-tool.png)
+
+Congrats, you've managed to create a simple MCP server and run the inspector tool to test it!
+
+You're ready for your next challenge, creating a client that can call the server and use the tools and resources you've created.

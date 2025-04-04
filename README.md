@@ -1,41 +1,26 @@
-# Website
+# MCP Workshop
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+🎉 Welcome to the MCP Workshop! 🚀
 
-### Installation
+In this workshop, you'll dive into the exciting world of **Model Context Protocol (MCP)**. Whether you're a beginner or an experienced developer, there's something here for everyone! 🧑‍💻✨
 
-```
-$ yarn
-```
+## What You'll Learn 📚
 
-### Local Development
+- The fundamentals of MCP and why it's awesome! 🌟
+- How to build and integrate MCP into your projects. 🔧
+- Hands-on exercises to solidify your understanding. 💪
 
-```
-$ yarn start
-```
+## Why Join? 🤔
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+- Collaborate with like-minded developers. 🤝
+- Gain practical skills you can use right away. 🛠️
+- Have fun while learning something new! 🎈
 
-### Build
+Get ready to level up your skills and have a blast! 🎉
 
-```
-$ yarn build
-```
+## To the workshop! 💻
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Navigate to the [workshop directory](./build/index.html)
+️
+---
+Let’s get started! 🚀

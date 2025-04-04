@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # MCP, what is it and why use it?
 
-> TLDR; If you build AI apps, you know that you can add tools and other resources to your LLM (large language model), to make the LLM more knowledgeable. However if you place those tools and resources on a server, the app and the server capabilities can by any client with an LLM. 
+> TLDR; If you build AI apps, you know that you can add tools and other resources to your LLM (large language model), to make the LLM more knowledgeable. However if you place those tools and resources on a server, the app and the server capabilities can be used by any client with/without an LLM.
 
 The Model Context Protocol (MCP) is an open standard designed to facilitate the connection between AI models and various data sources and tools. Here are some key points about MCP:
 
@@ -20,6 +20,10 @@ MCP standardizes how applications provide context to large language models (LLMs
 - **Local Data Sources**: Files, databases, and services on your computer that MCP servers can securely access.
 - **Remote Services**: External systems available over the internet (e.g., APIs) that MCP servers can connect to1.
 Components:
+
+![MCP Diagram](/img/diagram.png)
+
+*Image credit https://modelcontextprotocol.io/introduction*
 
 - **MCP Specification and SDKs**: Tools and guidelines for developers to implement MCP.
 Local MCP Server Support: Available in applications like Claude Desktop.
