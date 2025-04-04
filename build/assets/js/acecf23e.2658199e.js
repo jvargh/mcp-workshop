@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmcp_workshop=self.webpackChunkmcp_workshop||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/mcp-workshop/blog","blogTitle":"Blog","authorsListPath":"/mcp-workshop/blog/authors"}')}}]);

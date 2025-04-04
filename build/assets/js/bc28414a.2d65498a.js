@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmcp_workshop=self.webpackChunkmcp_workshop||[]).push([[3712],{6411:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/mcp-workshop/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
