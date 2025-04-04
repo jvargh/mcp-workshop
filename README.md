@@ -22,5 +22,7 @@ Get ready to level up your skills and have a blast! 🎉
 
 Navigate to the [workshop directory](./build/index.html)
 ️
+![workshop image](./assets/screenshot.png)
+
 ---
 Let’s get started! 🚀
