@@ -20,7 +20,7 @@ Get ready to level up your skills and have a blast! 🎉
 
 ## To the workshop! 💻
 
-Navigate to the [workshop directory](https://softchris.github.io/mcp-workshop/docs/mcp-concepts/mcp-concepts)
+Navigate to the [workshop directory](https://softchris.github.io/mcp-workshop/docs/category/mcp-concepts/)
 ️
 ![workshop image](./assets/screenshot.png)
 
