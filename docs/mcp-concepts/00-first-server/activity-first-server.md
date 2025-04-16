@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# A first MCP server
+# Activity: Create a first MCP server
 
 ## What a server can do
 
@@ -18,29 +18,43 @@ For example, an MCP server can:
 
 ## Creating a simple server
 
-> [!NOTE]
-> Make sure you have installed Node.js before running the code below. You can check if you have it installed by running `node -v` in your terminal.
+To create a server, you need to follow these steps:
+
+- Install the MCP SDK.
+- Create a new Node.js project and set up the project structure.
+- Write the server code.
+- Test the server.
+
+### -1- Install the MCP SDK
+
+:::note
+Make sure you have installed Node.js before running the code below. You can check if you have it installed by running `node -v` in your terminal.
+:::
 
 1. Install dependencies:
 
-```bash
-npm install @modelcontextprotocol/sdk zod
-npm install -D @types/node typescript
-```
+    ```bash
+    npm install @modelcontextprotocol/sdk zod
+    npm install -D @types/node typescript
+    ```
+
+### -2- Create a new Node.js project
+
+Create the project structure by following these steps:
 
 1. Create a `src` folder
-
-```bash
-mkdir src
-```
+    
+    ```bash
+    mkdir src
+    ```
 
 1. Create a file named `index.ts` in `src` folder.
-
+ 
 1. Scaffold a new Node.js project by running the following command in the root folder:
 
-```bash
-npm init -y
-```
+    ```bash
+    npm init -y
+    ```
 
 1. Update the `package.json` to include the following:
 
@@ -85,6 +99,8 @@ npm init -y
       "exclude": ["node_modules"]
     }
     ```
+
+### -3- Create the server
 
 1. Let's start by adding code to `index.ts` to create a simple MCP server:
 
@@ -140,10 +156,10 @@ npm init -y
    await server.connect(transport);
    ```
 
-
 Here's the full code for reference:
 
 ```typescript
+// index.ts
 import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
@@ -179,8 +195,7 @@ const transport = new StdioServerTransport();
 await server.connect(transport);
 ```
 
-
-## -2- Testing our server
+## Testing our server
 
 So far, you've created a simple MCP server and your file directory structure should look like this:
 
@@ -194,6 +209,8 @@ tsconfig.json
 
 Your server has a tool "add" and a resource "greeting". The server is ready to receive messages on stdin and send messages on stdout.
 
+### -1- Run the inspector tool
+
 The easiest way to test your server is to use the inspector tool. It's a tool we can run via `npx`, let's add it as a command to `package.json`:
 
 ```json
@@ -205,23 +222,27 @@ The easiest way to test your server is to use the inspector tool. It's a tool we
 }
 ```
 
-Providing you've run `npm run build` at least once, you can now run the inspector with:
+- Run the inspector tool by running the following command in your terminal:
 
-```bash
-npm run inspector
-```
+    ```bash
+    npm run inspector
+    ```
 
-You should see a window like this:
+    You should see a window like this:
 
-![Connect](/img/connect.png)
+    ![Connect](/img/connect.png)
+
+### -2- Connect to the server
 
 - Select to "Connect" and you should see the window below:
 
-![Connect](/img/connected.png)
+    ![Connect](/img/connected.png)
 
 - Select "List tools", to see what tools are available:
 
    ![Connect](/img/tools-listed.png)
+
+### -3- Run the tool
 
 - Select "add" and a dialog on your right will ask you to fill in the parameters:
 

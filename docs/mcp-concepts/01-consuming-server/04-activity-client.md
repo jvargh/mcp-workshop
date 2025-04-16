@@ -1,10 +1,27 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# Creating a client
+# Activity: Creating a client
 
-To create a client, we'll use a similar set up as with the server.
+To create a client, we'll use a similar set up as with the server. At high level, here's what we need to do:
+
+- Create a new Node.js project in the `client` folder.
+- Install the necessary dependencies.
+- Create a `src` folder and add an `index.ts` file.
+- Write the client code to connect to the server and call the `add` tool.
+
+## -1- Create a new Node.js project
+
+This is straightforward. We will create a new Node.js project and install the necessary dependencies. The project structure will look like this:
+
+```bash
+|- client
+    |- src
+    |   |- index.ts
+    |- package.json
+    |- tsconfig.json
+```
 
 1. Create a `client` folder in the root directory of your project.
 
@@ -64,6 +81,10 @@ To create a client, we'll use a similar set up as with the server.
    }
    ```
 
+### -2- Install the necessary dependencies
+
+We need to install the necessary dependencies for the client. The main dependency is the `@modelcontextprotocol/sdk` package, which provides the client SDK for interacting with the server. Also, we need `zod` for validation.
+
 1. Install the necessary dependencies:
 
    ```bash
@@ -77,6 +98,10 @@ To create a client, we'll use a similar set up as with the server.
    ```
 
 1. Create a file named `index.ts` in the `src` folder:
+
+## -3- Write the client code
+
+Now that we have the project set up, let's write the client code to connect to the server and call the `add` tool.
 
 1. Add the following code to `index.ts`:
 
@@ -122,6 +147,8 @@ To create a client, we'll use a similar set up as with the server.
 
    At this point, we're not doing anything with the client yet. To interact with the server, we need to implement the logic for sending requests for prompts, resources, and tools. This will be done in the next steps.
 
+### List tools and call the `add` tool
+
 1. Add the following code to the `main` function to query the server for its tools:
 
    ```typescript
@@ -157,7 +184,6 @@ To create a client, we'll use a similar set up as with the server.
 
    - The `callTool` method of the `Client` instance is called to invoke the `add` tool on the server.
    - `callTool` takes an object with the tool name and arguments as parameters.
-   
 
 Your code so far should look like this:
 
@@ -213,7 +239,7 @@ main().catch((error) => {
 });
 ```
 
-## Run the client
+## -4- Run the client
 
 To run the client type the following command in the terminal (make sure you stand in the client directory):
 
@@ -230,6 +256,6 @@ CALL TOOL
     Result:  { content: [ { type: 'text', text: '4' } ] }
 ```
 
-Next, let's show how we can improve the client to use a large language model (LLM). The idea is to let the user use a natural language prompt. Through tool calling, the LLM will be able to call the `add` tool we created in the server. 
+In our next activity, let's learn how we can add a large language model (LLM) to our client. This will make it possible for the client to negotiate with the server. Why this is useflu is that you can now show an NLP, Natural Language Processing user interface to the user, and the user can interact using natural language prompts.
 
 
