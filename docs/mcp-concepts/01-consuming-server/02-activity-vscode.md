@@ -4,6 +4,15 @@ sidebar_position: 2
 
 # Activity: Consume server with Visual Studio Code
 
+:::info
+For this exercise, keep using the `hello-mcp` server that you created in the previous exercise or clone an existing repo here:
+
+```bash
+git clone https://github.com/softchris/tutorial-mcp.git
+cd tutorial-mcp
+```
+:::
+
 For a server built with stdio you need to do the following at high level:
 
 - Create an mcp.json file in .vscode folder

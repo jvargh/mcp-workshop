@@ -350,3 +350,14 @@ Querying LLM:  What is the sum of 2 and 3?
 Making tool call
 Tool result:  { content: [ { type: 'text', text: '5' } ] }
 ```  
+
+## Summary
+
+You've learned to integrate LLM as part of your client. The LLM is now the interface between the user and the server. You can either add the client code to your existing project or you can clone the repository below to see a working solution:
+
+```bash
+git clone https://github.com/softchris/tutorial-mcp.git
+cd tutorial-mcp
+```
+
+Follow the instructions in the README file to run the server and test it using the inspector tool. You can also look at the code in `src/client.ts`  to see how the server is built.

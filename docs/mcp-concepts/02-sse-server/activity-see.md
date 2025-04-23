@@ -8,7 +8,7 @@ Let's create an SSE server and also let's ensure we can reach it via clients lik
 
 ## -1- Create the server
 
-1. Create a file `server-sse` in your existing project and add the following code:
+1. Create a file `server-sse.ts` in your existing project and add the following code:
 
     ```typescript
     import express, { Request, Response } from "express";
@@ -238,3 +238,7 @@ tell me a joke
 ```
 
 You should see a result where it's asking to run a tool like this `random-joke`.
+
+## Summary
+
+You've just a simple SSE server that can be used with the Inspector and Visual Studio Code. If you host this server somewhere other people can connect to it.

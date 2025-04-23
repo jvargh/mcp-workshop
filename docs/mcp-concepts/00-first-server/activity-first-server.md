@@ -255,3 +255,14 @@ The easiest way to test your server is to use the inspector tool. It's a tool we
 Congrats, you've managed to create a simple MCP server and run the inspector tool to test it!
 
 You're ready for your next challenge, creating a client that can call the server and use the tools and resources you've created.
+
+## -4- Summary
+
+You've learned to build a simple MCP Server and test it using the inspector tool. To look at a working solution you can clone the below:
+
+```bash
+git clone https://github.com/softchris/tutorial-mcp.git
+cd tutorial-mcp
+```
+
+Follow the instructions in the README file to run the server and test it using the inspector tool. You can also look at the code in `src/index.ts`  to see how the server is built.

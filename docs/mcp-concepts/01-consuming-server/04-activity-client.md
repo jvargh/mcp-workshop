@@ -258,4 +258,14 @@ CALL TOOL
 
 In our next activity, let's learn how we can add a large language model (LLM) to our client. This will make it possible for the client to negotiate with the server. Why this is useflu is that you can now show an NLP, Natural Language Processing user interface to the user, and the user can interact using natural language prompts.
 
+## Summary
+
+You've built a client capable of communicating with an MCP Server. The client can list tools and call the `add` tool. Either run this client from your project or clone the repository below to see a working solution:
+
+```bash
+git clone https://github.com/softchris/tutorial-mcp.git
+cd tutorial-mcp
+```
+
+Follow the instructions in the README file to run the server and test it using the inspector tool. You can also look at the code in `client/src/index.ts`  to see the client working.
 

@@ -147,3 +147,16 @@ Get in the habit of testing the server after each change. You can do this in sev
 - You can also use a tool like curl or Postman to call the API directly. For example, you can call the API using curl like this:
 
 ```bash
+curl -X POST -H "Content-Type: application/json" -d '{"category": ["dev"]}' http://localhost:3000/random-joke-by-category
+```
+
+## -4- Summary
+
+You've learned to add an API in one of your tools. You can either add this code to your existing server, if you created from the previous activity, or you can work in that code into below GitHub repository:
+
+```bash
+git clone https://github.com/softchris/tutorial-mcp.git
+cd tutorial-mcp
+```
+
+Follow the instructions in the README file to run the server and test it using the inspector tool. You can also look at the code in `src/index.ts`  to see how the server is built.
