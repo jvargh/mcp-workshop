@@ -4,19 +4,15 @@
 
 In this workshop, you'll dive into the exciting world of **Model Context Protocol (MCP)**. Whether you're a beginner or an experienced developer, there's something here for everyone! 🧑‍💻✨
 
-## What You'll Learn 📚
+## Solutions 📚
 
-- The fundamentals of MCP and why it's awesome! 🌟
-- How to build and integrate MCP into your projects. 🔧
-- Hands-on exercises to solidify your understanding. 💪
+This workshop comes with solutions:
 
-## Why Join? 🤔
-
-- Collaborate with like-minded developers. 🤝
-- Gain practical skills you can use right away. 🛠️
-- Have fun while learning something new! 🎈
-
-Get ready to level up your skills and have a blast! 🎉
+| Lesson | Link |
+|--|--|
+| 00 First server  | [First server](./solutions/00-first-server/README.md) |
+| 01 Consuming server | [Consuming server](./solutions/01-consuming-server/README.md) |
+|  02 SSE Server  | [SSE Server](./solutions/02-sse-server/README.md) |
 
 ## To the workshop! 💻
 

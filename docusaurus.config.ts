@@ -17,7 +17,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'microsoft', // Usually your GitHub org/user name.
+  organizationName: 'softchris', // Usually your GitHub org/user name.
   projectName: 'mcp-workshop', // Usually your repo name.
 
   onBrokenLinks: 'throw',
