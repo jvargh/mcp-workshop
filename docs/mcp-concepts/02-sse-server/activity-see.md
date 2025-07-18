@@ -2,11 +2,17 @@
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Activity: Create an SSE server
 
 Let's create an SSE server and also let's ensure we can reach it via clients like the Inspector and Visual Studio Code.
 
 ## -1- Create the server
+
+<Tabs>
+<TabItem value="typescript" label="TypeScript">
 
 1. Create a file `server-sse.ts` in your existing project and add the following code:
 
@@ -142,6 +148,41 @@ app.tool("random-joke", "A joke returned by the chuck norris api", {},
 app.listen(3001);
 ```
 
+</TabItem>
+<TabItem value="python" label="Python" default>
+
+1. Add the following code to `server.py`
+
+  ```python
+  from starlette.applications import Starlette
+  from starlette.routing import Mount, Host
+  from mcp.server.fastmcp import FastMCP
+
+
+  mcp = FastMCP("My App")
+  ```
+
+  Now we have imported the correct things and created a server instance.
+
+1. Let's add the tools next:
+
+  ```python
+  @mcp.tool()
+  def add(a: int, b: int) -> int:
+    """Add two numbers"""
+    return a + b
+
+  # Mount the SSE server to the existing ASGI server
+  app = Starlette(
+      routes=[
+          Mount('/', app=mcp.sse_app()),
+      ]
+  )
+  ```
+
+</TabItem>
+</Tabs>
+
 ## -2- Test the server
 
 To test the server, we will test it in two different ways:
@@ -150,6 +191,9 @@ To test the server, we will test it in two different ways:
 - Using Visual Studio Code. This also provide a nice UI but as it is a code editor, it can make your code development easier depending on what features you add to your MCP server.
 
 ### -1- Test the server using the Inspector
+
+<Tabs>
+<TabItem value="typescript" label="TypeScript">
 
 Clone the following project:
 
@@ -181,6 +225,26 @@ Next, start the inspector by running the following command:
 npm run inspect:server
 ```
 
+</TabItem>
+<TabItem value="python" label="Python" default>
+
+```sh
+uvicorn server:app --reload --port 8000
+```
+
+This should start the server.
+
+Now start the inspector in a separate terminal:
+
+```sh
+npx @modelcontextprotocol/inspector
+```
+
+Select SSE as transport and in the url field, specificy http://localhost:8000/sse and connect.
+
+</TabItem>
+</Tabs>
+
 This will kick off the Inspector and connect to the server.
 
 You should see an inspector window like this:
@@ -207,6 +271,10 @@ Like we did before, let's add an entry to `mcp.json` file in the `.vscode` folde
 }
 ```
 
+:::note
+Type the port here that corresponds to where your server is running.
+:::
+
 Important to note here is:
 
 - The type is `sse` and not `stdio`.
@@ -228,8 +296,8 @@ The complete `mcp.json` file should look like this:
 
 To test the server do the following:
 
-- Start it with `npm run start:server`.
-- Click the play button in the `.vscode/mcp.json` file.
+- Start it up.
+- Click the play button in the `.vscode/mcp.json` file, this should add it to its tools.
 
 Try typing a prompt like so in the Visual Studio Code GitHub Copilot Chat window:
 
