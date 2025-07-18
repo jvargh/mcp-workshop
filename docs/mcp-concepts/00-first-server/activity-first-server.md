@@ -2,6 +2,9 @@
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Activity: Create a first MCP server
 
 ## What a server can do
@@ -31,47 +34,67 @@ To create a server, you need to follow these steps:
 Make sure you have installed Node.js before running the code below. You can check if you have it installed by running `node -v` in your terminal.
 :::
 
-1. Install dependencies:
-
+<Tabs>
+  <TabItem value="TypeScript" label="TypeScript">
     ```bash
     npm install @modelcontextprotocol/sdk zod
     npm install -D @types/node typescript
     ```
+  </TabItem>
+  <TabItem value="Python" label="Python" default>
 
-### -2- Create a new Node.js project
+  1. Create a virtual environment
+
+  ```bash
+  python -m venv venv
+  venv\Scrips\activate
+  ```
+
+  2. Install dependencies
+
+    ```python
+    pip install "mcp[cli]"
+    ```
+  </TabItem>
+</Tabs>
+
+### -2- Create a new project
 
 Create the project structure by following these steps:
 
-1. Create a `src` folder
+<Tabs>
+  <TabItem value="TypeScript" label="TypeScript">
+
+   1. Create a `src` folder
     
     ```bash
     mkdir src
     ```
 
-1. Create a file named `index.ts` in `src` folder.
- 
-1. Scaffold a new Node.js project by running the following command in the root folder:
+   1. Create a file named `index.ts` in `src` folder.
 
-    ```bash
-    npm init -y
+   1. Scaffold a new Node.js project by running the following command in the root folder:
+
+      ```bash
+      npm init -y
+      ```
+
+   1. Update the `package.json` to include the following:
+
+    ```json
+    {
+        "type": "module",
+        "bin": {
+          "weather": "./build/index.js"
+        },
+        "scripts": {
+          "build": "tsc && chmod 755 build/index.js"
+        },
+        "files": [
+          "build"
+        ],
+    }
     ```
-
-1. Update the `package.json` to include the following:
-
-   ```json
-   {
-      "type": "module",
-      "bin": {
-        "weather": "./build/index.js"
-      },
-      "scripts": {
-        "build": "tsc && chmod 755 build/index.js"
-      },
-      "files": [
-        "build"
-      ],
-   }
-   ```
 
    For Windows, change `build` to:
 
@@ -80,7 +103,7 @@ Create the project structure by following these steps:
    ```
    
 
-1. Create `tsconfig.json` in the root folder with the following content:
+  1. Create `tsconfig.json` in the root folder with the following content:
 
     ```json
     {
@@ -99,8 +122,23 @@ Create the project structure by following these steps:
       "exclude": ["node_modules"]
     }
     ```
+ 
+
+  </TabItem>
+  <TabItem value="Python" label="Python" default>
+
+  1. Create a `src` folder.
+
+  1. Create a file `server.py` in it.
+
+  </TabItem>
+
+  </Tabs>
 
 ### -3- Create the server
+
+<Tabs>
+<TabItem value="TypeScript" label="TypeScript">
 
 1. Let's start by adding code to `index.ts` to create a simple MCP server:
 
@@ -195,9 +233,53 @@ const transport = new StdioServerTransport();
 await server.connect(transport);
 ```
 
+</TabItem>
+<TabItem value="Python" label="Python" default>
+
+1. Create the server by adding the below code:
+
+  ```python
+  # server.py
+  from mcp.server.fastmcp import FastMCP
+
+  # Create an MCP server
+  mcp = FastMCP("Demo")
+
+  ```
+
+1. Now, let's add the tools:
+
+  ```python
+  # Add an addition tool
+  @mcp.tool()
+  def add(a: int, b: int) -> int:
+      """Add two numbers"""
+      return a + b
+
+  ```
+
+1. Finally, let's add a resource:
+
+  ```python
+   # Add a dynamic greeting resource
+  @mcp.resource("greeting://{name}")
+  def get_greeting(name: str) -> str:
+      """Get a personalized greeting"""
+      return f"Hello, {name}!"
+
+  if __name__ == "__main__":
+      mcp.run()
+  ```
+
+</TabItem>
+</Tabs>
+
 ## Testing our server
 
 So far, you've created a simple MCP server and your file directory structure should look like this:
+
+<Tabs>
+<TabItem value="typescript" label="TypeScript">
 
 ```bash
 src/
@@ -206,12 +288,27 @@ package.json
 package-lock.json
 tsconfig.json
 ```
+</TabItem>
+<TabItem value="python" label="Python" default>
+
+```text
+src/
+|-- server.py
+```
+
+</TabItem>
+</Tabs>
 
 Your server has a tool "add" and a resource "greeting". The server is ready to receive messages on stdin and send messages on stdout.
 
 ### -1- Run the inspector tool
 
-The easiest way to test your server is to use the inspector tool. It's a tool we can run via `npx`, let's add it as a command to `package.json`:
+The easiest way to test your server is to use the inspector tool. It's a tool we can run via `npx`. 
+
+<Tabs>
+<TabItem value="TypeScript">
+
+Let's add it as a command to `package.json`:
 
 ```json
 {
@@ -231,6 +328,21 @@ The easiest way to test your server is to use the inspector tool. It's a tool we
     You should see a window like this:
 
     ![Connect](/img/connect.png)
+
+</TabItem>
+<TabItem value="python" label="Python" default>
+
+```bash
+mcp dev server.py
+```
+
+You should see a window like this:
+
+![Connect](/img/connect.png)
+
+</TabItem>
+
+</Tabs>
 
 ### -2- Connect to the server
 
@@ -261,8 +373,6 @@ You're ready for your next challenge, creating a client that can call the server
 You've learned to build a simple MCP Server and test it using the inspector tool. To look at a working solution you can clone the below:
 
 ```bash
-git clone https://github.com/softchris/tutorial-mcp.git
-cd tutorial-mcp
+git clone https://github.com/softchris/mcp-workshop-mcp.git
+cd mcp-workshop
 ```
-
-Follow the instructions in the README file to run the server and test it using the inspector tool. You can also look at the code in `src/index.ts`  to see how the server is built.
