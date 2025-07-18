@@ -2,6 +2,9 @@
 sidebar_position: 6
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Activity: Create an MCP client using LLM
 
 Let's add an LLM and ensure the LLM is what's between the user and the server. Here's how it will work on high level:
@@ -11,7 +14,10 @@ Let's add an LLM and ensure the LLM is what's between the user and the server. H
 
 Next, let's implement this in code.
 
-## -1- Create a client file
+## -1- Create the LLM client
+
+<Tabs>
+<TabItem value="typescript">
 
 Use your existing Node.js project but add a `Client.ts` file.
 
@@ -322,7 +328,160 @@ client.connectToServer(transport);
 
 That's it, now you have a working client.
 
+</TabItem>
+<TabItem value="python" label="Python" default>
+
+1. Create a file *client.py* and add the following code:
+
+  ```python
+  from mcp import ClientSession, StdioServerParameters, types
+  from mcp.client.stdio import stdio_client
+
+  # llm
+  import os
+  from azure.ai.inference import ChatCompletionsClient
+  from azure.ai.inference.models import SystemMessage, UserMessage
+  from azure.core.credentials import AzureKeyCredential
+  import json
+
+  # Create server parameters for stdio connection
+  server_params = StdioServerParameters(
+      command="mcp",  # Executable
+      args=["run", "server.py"],  # Optional command line arguments
+      env=None,  # Optional environment variables
+  )
+  ```
+
+  Now you have the needed imports and you've created some basic stdio parameters that will run the server once the client is started.
+
+1. Add the following helper functions:
+
+  ```python
+  def call_llm(prompt, functions):
+    token = os.environ["GITHUB_TOKEN"]
+    endpoint = "https://models.inference.ai.azure.com"
+
+    model_name = "gpt-4o"
+
+    client = ChatCompletionsClient(
+        endpoint=endpoint,
+        credential=AzureKeyCredential(token),
+    )
+
+    print("CALLING LLM")
+    response = client.complete(
+        messages=[
+            {
+            "role": "system",
+            "content": "You are a helpful assistant.",
+            },
+            {
+            "role": "user",
+            "content": prompt,
+            },
+        ],
+        model=model_name,
+        tools = functions,
+        # Optional parameters
+        temperature=1.,
+        max_tokens=1000,
+        top_p=1.    
+    )
+
+    response_message = response.choices[0].message
+    
+    functions_to_call = []
+
+    if response_message.tool_calls:
+        for tool_call in response_message.tool_calls:
+            print("TOOL: ", tool_call)
+            name = tool_call.function.name
+            args = json.loads(tool_call.function.arguments)
+            functions_to_call.append({ "name": name, "args": args })
+
+    return functions_to_call
+
+  def convert_to_llm_tool(tool):
+      tool_schema = {
+          "type": "function",
+          "function": {
+              "name": tool.name,
+              "description": tool.description,
+              "type": "function",
+              "parameters": {
+                  "type": "object",
+                  "properties": tool.inputSchema["properties"]
+              }
+          }
+      }
+
+      return tool_schema
+
+  ```
+
+  - `call_llm` will help us call an LLM (this calls GitHub Models so if you're in GitHub Codespaces this will just work, if not, you need to set up a PAT, personal access token).
+  - `convert_to_llm_tool`, this function will be called after a first initial call to the server where we ask for its tools. For each tool from the MCP server, we will convert them to a format the LLM will understand.
+
+1. Let's define our `run` function next:
+
+  ```python
+  async def run():
+    async with stdio_client(server_params) as (read, write):
+        async with ClientSession(
+            read, write
+        ) as session:
+            # Initialize the connection
+            await session.initialize()
+
+            # List available resources
+            resources = await session.list_resources()
+            print("LISTING RESOURCES")
+            for resource in resources:
+                print("Resource: ", resource)
+
+            # 1. List available tools
+            tools = await session.list_tools()
+            print("LISTING TOOLS")
+
+            functions = []
+
+            # 2. convert tools to LLM tool format
+            for tool in tools.tools:
+                print("Tool: ", tool.name)
+                print("Tool", tool.inputSchema["properties"])
+                functions.append(convert_to_llm_tool(tool))
+            
+            prompt = "Add 2 to 20"
+            # 3. ask LLM what tools to all, if any
+            functions_to_call = call_llm(prompt, functions)
+
+            # 4. call suggested functions
+            for f in functions_to_call:
+                result = await session.call_tool(f["name"], arguments=f["args"])
+                print("TOOLS result: ", result.content)
+
+
+  if __name__ == "__main__":
+      import asyncio
+
+      asyncio.run(run())
+  ```
+
+  Here's what happens:
+
+  1. First, we ask the server for its tools.
+  1. For each of its tools, we convert it to an LLM type tool.
+  1. Now we call the LLM with a prompt and set of tools we just converted.
+  1. Next, we call suggsted tools and print the results
+
+</TabItem>
+
+</Tabs>
+
 ## -2- Run the client
+
+<Tabs>
+<TabItem value="typescript" label="TypeScript">
 
 To test this client out, you're recommended to add a task to your _package.json_ called "client" that runs the client. This way you can run the client with `npm run client`.
 
@@ -334,6 +493,35 @@ To test this client out, you're recommended to add a task to your _package.json_
 }
 ```
 
+You should see the following output:
+
+```bash
+Asking server for available tools
+Querying LLM:  What is the sum of 2 and 3?
+Making tool call
+Tool result:  { content: [ { type: 'text', text: '5' } ] }
+``` 
+
+</TabItem>
+<TabItem value="python" label="Python" default>
+
+```sh
+python client.py
+```
+
+You should see a response similar to:
+
+```text
+Asking server for available tools
+Querying LLM:  What is the sum of 2 and 3?
+Making tool call
+Tool result:  { content: [ { type: 'text', text: '5' } ] }
+``` 
+
+</TabItem>
+</Tabs>
+
+
 Here's a repository you can clone if you want to test this out:
 
 ```bash
@@ -342,22 +530,11 @@ cd tutorial-mcp
 npm run client
 ```
 
-You should see the following output:
-
-```bash
-Asking server for available tools
-Querying LLM:  What is the sum of 2 and 3?
-Making tool call
-Tool result:  { content: [ { type: 'text', text: '5' } ] }
-```  
-
 ## Summary
 
 You've learned to integrate LLM as part of your client. The LLM is now the interface between the user and the server. You can either add the client code to your existing project or you can clone the repository below to see a working solution:
 
 ```bash
-git clone https://github.com/softchris/tutorial-mcp.git
-cd tutorial-mcp
+git clone https://github.com/softchris/mcp-workshop.git
+cd mcp-workshop
 ```
-
-Follow the instructions in the README file to run the server and test it using the inspector tool. You can also look at the code in `src/client.ts`  to see how the server is built.
