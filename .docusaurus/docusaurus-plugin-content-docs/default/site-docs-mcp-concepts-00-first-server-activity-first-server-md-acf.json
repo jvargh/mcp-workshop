@@ -1,0 +1,27 @@
+{
+  "id": "mcp-concepts/first-server/activity-first-server",
+  "title": "Activity: Create a first MCP server",
+  "description": "What a server can do",
+  "source": "@site/docs/mcp-concepts/00-first-server/activity-first-server.md",
+  "sourceDirName": "mcp-concepts/00-first-server",
+  "slug": "/mcp-concepts/first-server/activity-first-server",
+  "permalink": "/mcp-workshop/docs/mcp-concepts/first-server/activity-first-server",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/mcp-concepts/00-first-server/activity-first-server.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "MCP, what is it and why use it?",
+    "permalink": "/mcp-workshop/docs/mcp-concepts/first-server/intro"
+  },
+  "next": {
+    "title": "Activity: Add API to server",
+    "permalink": "/mcp-workshop/docs/mcp-concepts/first-server/activity-add-api"
+  }
+}

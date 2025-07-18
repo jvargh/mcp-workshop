@@ -1,0 +1,27 @@
+{
+  "id": "mcp-concepts/first-server/intro",
+  "title": "MCP, what is it and why use it?",
+  "description": "TLDR; If you build AI apps, you know that you can add tools and other resources to your LLM (large language model), to make the LLM more knowledgeable. However if you place those tools and resources on a server, the app and the server capabilities can be used by any client with/without an LLM.",
+  "source": "@site/docs/mcp-concepts/00-first-server/00-intro.md",
+  "sourceDirName": "mcp-concepts/00-first-server",
+  "slug": "/mcp-concepts/first-server/intro",
+  "permalink": "/mcp-workshop/docs/mcp-concepts/first-server/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/mcp-concepts/00-first-server/00-intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Getting started",
+    "permalink": "/mcp-workshop/docs/category/getting-started"
+  },
+  "next": {
+    "title": "Activity: Create a first MCP server",
+    "permalink": "/mcp-workshop/docs/mcp-concepts/first-server/activity-first-server"
+  }
+}

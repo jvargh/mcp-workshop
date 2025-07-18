@@ -1,0 +1,27 @@
+{
+  "id": "mcp-concepts/sse-server/activity-see",
+  "title": "Activity: Create an SSE server",
+  "description": "Let's create an SSE server and also let's ensure we can reach it via clients like the Inspector and Visual Studio Code.",
+  "source": "@site/docs/mcp-concepts/02-sse-server/activity-see.md",
+  "sourceDirName": "mcp-concepts/02-sse-server",
+  "slug": "/mcp-concepts/sse-server/activity-see",
+  "permalink": "/mcp-workshop/docs/mcp-concepts/sse-server/activity-see",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/mcp-concepts/02-sse-server/activity-see.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Servers with SSE",
+    "permalink": "/mcp-workshop/docs/mcp-concepts/sse-server/sse"
+  },
+  "next": {
+    "title": "What else?",
+    "permalink": "/mcp-workshop/docs/category/what-else"
+  }
+}
