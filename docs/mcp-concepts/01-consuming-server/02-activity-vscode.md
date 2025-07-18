@@ -8,8 +8,8 @@ sidebar_position: 2
 For this exercise, keep using the `hello-mcp` server that you created in the previous exercise or clone an existing repo here:
 
 ```bash
-git clone https://github.com/softchris/tutorial-mcp.git
-cd tutorial-mcp
+git clone https://github.com/softchris/mcp-workshop.git
+cd mcp-workshop
 ```
 :::
 

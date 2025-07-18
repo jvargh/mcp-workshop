@@ -2,6 +2,9 @@
 sidebar_position: 3
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Activity: Add API to server
 
 A tool like `add` is interesting to see how things work, but the real value comes from seeing how to use it in a real application. In this activity, you will add an API to the server you created in the previous activity.
@@ -9,6 +12,9 @@ A tool like `add` is interesting to see how things work, but the real value come
 So far, you've seen how we added a simple tool like `add` to the server. But what if we want to call a Web API? In this activity, you will add an API to the server you created in the previous activity.
 
 ## -1- Adding a tool calling an API
+
+<Tabs>
+<TabItem value="typescript" label="TypeScript">
 
 Let's create a new file called `server-api.ts` with the following content:
 
@@ -36,9 +42,31 @@ In the preceding code:
 - The tool `random-joke` is created with a description saying "A joke returned by the chuck norris api". The input schema is empty, meaning it doesn't take any input, you can also omit this input parameter but I wanted to show you where the input schema goes.
 - Then, we call the `fetch` function to call the API and get a random joke. The response is then parsed as JSON and returned as a text message.
 
+</TabItem>
+<TabItem value="python" label="Python" default>
+
+Let's create a file `server-api.py`
+
+```python
+@mcp.tool()
+async def joke() -> str:
+    """Get joke"""
+    res = requests.get("https://api.chucknorris.io/jokes/random")
+    json_response = res.json()
+
+    return json_response.get("value", "No joke found.")
+```
+
+</TabItem>
+</Tabs>
+
 ## -2- Adding a tool that takes input
 
 You saw how simply we can call an API, but what if we want to pass some input to the API? 
+
+
+<Tabs>
+<TabItem value="typescript" label="TypeSCript">
 
 Add the following code to the `server-api.ts` file:
 
@@ -139,24 +167,67 @@ await server.connect(transport);
 console.log("Server started and listening for messages...");
 ```
 
+</TabItem>
+<TabItem value="python" label="Python" default>
+
+```python
+@mcp.tool()
+async def joke_param(category: str = "sport") -> str:
+    """Get joke with parameter"""
+    
+    res = requests.get(f"https://api.chucknorris.io/jokes/random?category={category}")
+    json_response = res.json()
+
+    return json_response.get("value", "No joke found.")
+```
+
+Here we add a new function `joke_param` and a parameter `category`.
+
+</TabItem>
+</Tabs>
+
 ## -3- Testing the server
 
 Get in the habit of testing the server after each change. You can do this in several ways:
 
 - Calling the inspector tool `npx @modelcontextprotocol/inspector node build/index.js`.
-- You can also use a tool like curl or Postman to call the API directly. For example, you can call the API using curl like this:
+- You can also use a tool like curl or Postman to call the API directly (if this is a server using SSE or streamable HTTP). For example, you can call the API using curl like this:
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"category": ["dev"]}' http://localhost:3000/random-joke-by-category
 ```
+
+<Tabs>
+<TabItem value="typescript" label="TypeScript">
+
+```bash
+```
+
+</TabItem>
+<TabItem value="python" label="Python" default>
+
+Run the first tool:
+
+```bash
+npx @modelcontextprotocol/inspector --cli mcp run server-api.py --method tools/call --tool-name joke
+```
+
+Run the second tool with a param
+
+```bash
+npx @modelcontextprotocol/inspector --cli mcp run server-api.py --method tools/call --tool-name joke_param --tool-arg category=travel
+```
+
+</TabItem>
+</Tabs>
 
 ## -4- Summary
 
 You've learned to add an API in one of your tools. You can either add this code to your existing server, if you created from the previous activity, or you can work in that code into below GitHub repository:
 
 ```bash
-git clone https://github.com/softchris/tutorial-mcp.git
-cd tutorial-mcp
+git clone https://github.com/softchris/mcp-workshop.git
+cd mcp-workshop
 ```
 
-Follow the instructions in the README file to run the server and test it using the inspector tool. You can also look at the code in `src/index.ts`  to see how the server is built.
+Follow the instructions in the README file.
