@@ -2,6 +2,9 @@
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Activity: Consume server with Visual Studio Code
 
 :::info
@@ -15,7 +18,7 @@ cd mcp-workshop
 
 For a server built with stdio you need to do the following at high level:
 
-- Create an mcp.json file in .vscode folder
+- Create an mcp.json file in `.vscode` folder
 - Enter absolute path to the server
 - Start the server via the JSON file
 - Run the tool via GitHub Copilot chat
@@ -31,6 +34,9 @@ To do this, follow the steps below:
 The config file is used to configure the server. It can contain both input, and server configurations.
 
 We need a folder for our configuration file.
+
+<Tabs>
+<TabItem value="typescript" label="TypeScript">
 
 1. Create a `.vscode` folder in the root directory of your project and add a `mcp.json` file in the `.vscode` folder.
 
@@ -63,6 +69,44 @@ We need a folder for our configuration file.
     ```
 
     This will give you the absolute path to your project. You can then copy the path and paste it in the `mcp.json` file.
+
+</TabItem>
+<TabItem value="python" label="Python" default>
+
+1. Create a `.vscode` folder in the root directory of your project and add a `mcp.json` file in the `.vscode` folder.
+
+    ```bash
+    mkdir .vscode
+    ```
+
+    Next, we need the actual configuration file.
+
+1. Create a `mcp.json` file in the `.vscode` folder with the following content:
+
+    ```json
+    {
+        "inputs": [],
+        "servers": {
+           "hello-mcp": {
+               "command": "cmd",
+               "args": [
+                   "/c", "node", "<absolute path>\\server.py"
+               ]
+           }
+        }
+    }
+    ```
+
+    The path to your server should be the build folder. To find the path, run the following command in the terminal:
+    
+    ```bash
+    pwd
+    ```
+
+    This will give you the absolute path to your project. You can then copy the path and paste it in the `mcp.json` file.
+
+</TabItem>
+</Tabs>
 
 ## Start the server
 
