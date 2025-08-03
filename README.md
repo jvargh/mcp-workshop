@@ -13,6 +13,7 @@ This workshop comes with solutions:
 | 00 First server  | [First server](./solutions/00-first-server/README.md) |
 | 01 Consuming server | [Consuming server](./solutions/01-consuming-server/README.md) |
 |  02 SSE Server  | [SSE Server](./solutions/02-sse-server/README.md) |
+| 🐍 Flask Products API | [Flask Product Management with MCP](./solutions/flask-products/README.md) |
 
 ## To the workshop! 💻
 
